@@ -137,3 +137,8 @@ super + shift + Up
 #volume down
 super + shift + Down
 	pactl set-sink-volume 0 -5%
+
+#discord
+
+super + shift + d
+	discord
