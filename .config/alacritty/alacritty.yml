@@ -1,0 +1,35 @@
+colors:
+  # Default colors
+  primary:
+    background: '0x000000'
+    foreground: '0x1ce55f'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xc0bc61'
+    green:   '0x889324'
+    yellow:  '0x893983'
+    blue:    '0x5f819d'
+    magenta: '0x85678f'
+    cyan:    '0x688f8a'
+    white:   '0x35b46c'
+
+  # Bright colors
+  bright:
+    black:   '0x49576e'
+    red:     '0xcbde78'
+    green:   '0xc6df22'
+    yellow:  '0xf0c674'
+    blue:    '0xa55cbe'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0x000000'
+
+#Font configuration
+font:
+  normal:
+    family: Hack NF
+    style: Regular
+    size: 10
+#test
