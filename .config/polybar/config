@@ -1,6 +1,6 @@
 ; Colors for Diligord theme
 [colors]
-background = #0009ff00
+background = #00000000
 foreground = #09ff00
 primary = #0fae34
 secondary = #f29100
@@ -8,7 +8,7 @@ alert = #db12a9
 
 [bar/diligord]
 width = 100%
-height = 35
+height = 25
 
 fixed-center = true
 
