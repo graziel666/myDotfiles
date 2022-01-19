@@ -22,11 +22,13 @@ bspc rule -a Screenkey manage=off
 
 #Autostart
 
-#if [[ $(xrandr -q | grep 'HDMI1 connected')]]; then
+#if [[ $(xrandr -q | grep -w 'HDMI1 connected')]]; then
 #	xrandr --output LVDS1 --primary --mode 1366x768 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --right-of LVDS1
 #fi
 
 
-picom --experimental-backends &
-feh --bg-fill --randomize ~/Pictures/walpapers/* &
+picom &
+feh --bg-fill --randomize -D -1200  ~/Pictures/walpapers/* &
 $HOME/.config/polybar/launch.sh &
+edex-ui &
+

@@ -142,3 +142,7 @@ super + shift + Down
 
 super + shift + d
 	discord
+
+#screenshot
+super + shift + p
+        import -window root /tmp/screenshot.png
