@@ -8,7 +8,7 @@ super + Return
 
 # firefox
 super + d
-	firefox
+	brave
 
 # program launcher
 super + @space
