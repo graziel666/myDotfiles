@@ -1,3 +1,3 @@
-2022/01/19-13:33:44.951 1a52 Reusing MANIFEST /home/diego/.config/eDEX-UI/Local Storage/leveldb/MANIFEST-000001
-2022/01/19-13:33:44.951 1a52 Recovering log #3
-2022/01/19-13:33:44.951 1a52 Reusing old log /home/diego/.config/eDEX-UI/Local Storage/leveldb/000003.log 
+2022/01/20-16:34:03.036 b0ca Reusing MANIFEST /home/diego/.config/eDEX-UI/Local Storage/leveldb/MANIFEST-000001
+2022/01/20-16:34:03.037 b0ca Recovering log #3
+2022/01/20-16:34:03.037 b0ca Reusing old log /home/diego/.config/eDEX-UI/Local Storage/leveldb/000003.log 

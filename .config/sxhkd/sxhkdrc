@@ -12,7 +12,7 @@ super + d
 
 # program launcher
 super + @space
-	dmenu_run
+	rofi -show run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -139,10 +139,13 @@ super + shift + Down
 	pactl set-sink-volume 0 -5%
 
 #discord
-
 super + shift + d
 	discord
 
 #screenshot
 super + shift + p
-        import -window root /tmp/screenshot.png
+	import -window root /tmp/screenshot.png
+
+#Aseprite
+super + a
+	cd .local/share/Steam/steamapps/common/Aseprite && LD_LIBRARY_PATH=~/.steam/bin32/ ~/.steam/bin32/steam-runtime/run.sh ./aseprite
