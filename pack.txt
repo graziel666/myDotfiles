@@ -1,0 +1,9 @@
+alacritty
+bspwm
+sxhkd
+polybar
+rofi
+waybar
+newm
+edex-ui
+neovim

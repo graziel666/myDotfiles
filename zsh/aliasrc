@@ -24,7 +24,7 @@ ex ()
   fi
 }
 
-export EDITOR=vim
+export EDITOR=micro
 
 alias pacman-update='sudo pacman-mirrors --geoip'
 
@@ -100,3 +100,4 @@ alias ..='cd ..'
 alias neofetch='neofetch --ascii $HOME/Downloads/quaggon-ascii-art.txt'
 alias ed='edex-ui'
 alias ls='ls -al'
+alias lvim='/home/diego/.local/bin/lvim'
