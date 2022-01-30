@@ -6,13 +6,23 @@
 super + Return
 	kitty
 
+# terminal emulator
+super + shift + Return
+	cool-retro-term
+
+
 # firefox
 super + d
 	brave
 
 # program launcher
 super + @space
+	rofi -show drun
+
+# program launcher
+super + shift + @space
 	rofi -show run
+
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -144,8 +154,9 @@ super + shift + d
 
 #screenshot
 super + shift + p
-	import -window root /tmp/screenshot.png
+	deepin-screen-recorder
 
 #Aseprite
 super + a
 	cd .local/share/Steam/steamapps/common/Aseprite && LD_LIBRARY_PATH=~/.steam/bin32/ ~/.steam/bin32/steam-runtime/run.sh ./aseprite
+
