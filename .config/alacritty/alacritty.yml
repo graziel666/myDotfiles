@@ -1,37 +1,55 @@
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0x1ce55f'
+    background: '0x0e1309'
+    foreground: '0x2e760c'
 
   # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xc0bc61'
-    green:   '0x889324'
-    yellow:  '0x893983'
-    blue:    '0x5f819d'
-    magenta: '0x85678f'
-    cyan:    '0x688f8a'
-    white:   '0x35b46c'
+    black:   '0x0e1309'
+    red:     '0x2b6906'
+    green:   '0x19cb00'
+    yellow:  '0x0a7404'
+    blue:    '0x779529'
+    magenta: '0x707f30'
+    cyan:    '0x740c80'
+    white:   '0x19e915'
 
   # Bright colors
   bright:
-    black:   '0x49576e'
-    red:     '0xcbde78'
-    green:   '0xc6df22'
-    yellow:  '0xf0c674'
-    blue:    '0xa55cbe'
-    magenta: '0xb294bb'
-    cyan:    '0x8abeb7'
-    white:   '0x000000'
+    black:   '0x847e7e'
+    red:     '0x2b6906'
+    green:   '0x19cb00'
+    yellow:  '0x0a7404'
+    blue:    '0x779529'
+    magenta: '0x707f30'
+    cyan:    '0x740c80'
+    white:   '0x19e915'
+
+
+
+
 
 #Font configuration
 font:
   normal:
-    family: Hack NF
+    family: pavlova
     style: Regular
-    size: 8.0
+
+  bold:
+    family: pavlova
+    style: Bold
+        
+  italic:        
+    family: pavlova
+    style: Italic
+    size: 12
+
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
 #testing something
 
 # Window decorations
@@ -49,4 +67,11 @@ font:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 window:
- opacity: 0.5
+ opacity: 1
+
+#shell:
+#  program: /bin/zsh
+#  args:
+#    - -l
+#    - -c
+#    - "tmux attach || tmux"

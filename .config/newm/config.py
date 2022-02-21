@@ -16,6 +16,10 @@ from newm import (
 )
 
 def on_startup():
+    os.system("systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+    os.system("hash dbus-update-activation-environment 2>/dev/null && \
+        dbus-update-activation-environment --systemd DISPLAY \
+        WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     os.system("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots")
     os.system("catapult &")
     os.system("waybar &")
@@ -28,7 +32,7 @@ corner_radius = 20.5
 # output_scale = 2.
 
 outputs = [
-    { 'name': 'eDP-1', 'pos_x': 0, 'pos_y': 0, 'scale': 2. },
+    { 'name': 'eDP-1', 'pos_x': 0, 'pos_y': 0, 'scale': 1. },
     { 'name': 'virt-1', 'pos_x': 1280, 'pos_y': 0, 'width': 1280, 'height': 720, 'scale': 1., 
         'mHz': 30000, 'anim': False},
     { 'name': 'HDMI-A-2', 'pos_x': 2560, 'width': 3840, 'height': 2160, 'scale': 2.,
@@ -121,7 +125,7 @@ key_bindings = lambda layout: [
     ("M-W", lambda: layout.move_workspace()),
     ("M-S", lambda: os.system("grim -g \"$(slurp)\" &")),
 
-    ("M-Return", lambda: os.system("alacritty &")),
+    ("M-Return", lambda: os.system("kitty &")),
     #("M-e", lambda: os.system("emacsclient -c -a \"emacs\" &")),
     ("M-c", lambda: os.system("brave --enable-features=UseOzonePlatform --ozone-platform=wayland &")),
     ("M-m", lambda: os.system("bash /$HOME/.shell/macho-gui.sh &")),

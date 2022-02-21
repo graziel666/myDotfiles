@@ -8,7 +8,7 @@ alert = #db12a9
 
 [bar/diligord]
 width = 100%
-height = 25
+height = 16
 
 fixed-center = true
 
@@ -27,7 +27,7 @@ font-2 = siji:pixelsize=10;1
 
 #modules-left = battery eth date powermenu wlan
 modules-center = workspaces #time
-modules-right = alsa battery date powermenu eth 
+modules-right = pulseaudio battery date powermenu eth 
 
 tray-position = right
 tray-padding = 2
@@ -50,14 +50,14 @@ ws-icon-3 = IV;◉
 ws-icon-4 = V;◉
 ws-icon-5 = VI;◉
 ws-icon-6 = VII;◉
-;ws-icon-7 = 
+#ws-icon-7 = VII;◉
 
 label-focused = ●
 label-focused-background = ${colors.primary}
 label-focused-padding = 1
 label-occupied = ◉
 label-occupied-padding = 1
-label-occupied-underline = ${colors.primary}
+#label-occupied-underline = ${colors.primary}
 label-urgent = ◌
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
@@ -78,7 +78,7 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+#format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
@@ -315,7 +315,7 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 

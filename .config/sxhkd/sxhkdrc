@@ -4,14 +4,14 @@
 
 # terminal emulator
 super + Return
-	kitty
+	alacritty --option font.size=8 cursor.style=beam
 
 # terminal emulator
 super + shift + Return
 	cool-retro-term
 
 
-# firefox
+# brave
 super + d
 	brave
 
@@ -137,16 +137,13 @@ super + {Left,Down,Up,Right}
 
 #mines
 
-#vscode
-super + v
-		code
 
 #volume up
 super + shift + Up
-	pactl set-sink-volume 0 +5%
+	amixer -D pulse sset Master 5%+
 #volume down
 super + shift + Down
-	pactl set-sink-volume 0 -5%
+	amixer -D pulse sset Master 5%-
 
 #discord
 super + shift + d
@@ -159,4 +156,21 @@ super + shift + p
 #Aseprite
 super + a
 	cd .local/share/Steam/steamapps/common/Aseprite && LD_LIBRARY_PATH=~/.steam/bin32/ ~/.steam/bin32/steam-runtime/run.sh ./aseprite
+
+#pico8
+super + alt + p
+	pico8
+
+#godot
+super + alt + g
+	godot
+
+#tiled
+super + alt + t
+	tiled
+
+#test music
+
+ctrl + {b,n,@space}
+	{playerctl previous,playerctl next,playerctl play-pause}
 
