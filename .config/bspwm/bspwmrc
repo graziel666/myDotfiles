@@ -37,3 +37,4 @@ bspc rule -a dolphin desktop='^6' follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=on
+bspc rule -a Atom desktop='^4' follow=on

@@ -170,7 +170,17 @@ super + alt + t
 	tiled
 
 #test music
-
-ctrl + {b,n,@space}
+super + ctrl + {b,n,@space}
 	{playerctl previous,playerctl next,playerctl play-pause}
 
+#vscode
+super + v
+       alacritty -e $SHELL -lc "/home/diego/.local/bin/lvim"
+
+#pixel8
+super + ctrl + p
+	cd /home/diego/pixel8/PixelVision8-v1.0.18-linux && Pixel8
+
+#atom
+super + alt + a
+	atom
